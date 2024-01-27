@@ -29,7 +29,13 @@ export const metadata = {
   },
     keywords: ["Mom's club"],
   openGraph: {
-    images: '/images/logo.png',
+     images: [
+            {
+              url: '/images/logo.png',
+              width: 63,
+              height: 65,
+            },
+          ],
     title: "Mom's club",
     description: "Mom's club - Первый курс по уходу за новорождёнными для мам в Узбекистане",
     url: 'https://mom-s-club-uz.vercel.app/',
