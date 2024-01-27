@@ -29,7 +29,7 @@ export const metadata = {
   },
     keywords: ["Mom's club"],
   openGraph: {
-    images: 'https://instagram.ftas1-2.fna.fbcdn.net/v/t51.2885-19/294526509_609037777199284_8972031799962014639_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.ftas1-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=4tupSbp6pH4AX_V3p30&edm=ABmJApABAAAA&ccb=7-5&oh=00_AfBeaLdD81dhWJAnGhj3VxalCYYG3HUmttsF3kc7dc5zgA&oe=65BA6016&_nc_sid=b41fef',
+    images: '/images/logo.png',
     title: "Mom's club",
     description: "Mom's club - Первый курс по уходу за новорождёнными для мам в Узбекистане",
     url: 'https://mom-s-club-uz.vercel.app/',
