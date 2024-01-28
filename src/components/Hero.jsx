@@ -14,7 +14,7 @@ const Hero = () => {
             <div className='pt-[118px] '>
               <h1>
                 <span className='block font-regular mb-4 text-lg'>Mom&#x2019;s</span>
-                <span className='alexandra text-[100px] leading-[100px] my-4 inline-block'>Club and Course</span>
+                <span className='alexandra text-2xl leading-[100px] my-4 inline-block'>Club and Course</span>
               </h1>
               <p className=''>Первый курс по уходу за новорождёнными для будущих мам в Узбекистане</p>
               <div className='mt-11 flex gap-5'>
