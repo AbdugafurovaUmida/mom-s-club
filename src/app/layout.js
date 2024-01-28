@@ -1,4 +1,6 @@
 // import { Inter } from "next/font/google";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import { Roboto, Open_Sans } from "next/font/google";
 import localFont from 'next/font/local'
 import "./globals.css";
@@ -46,7 +48,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${open_sans.variable} ${alexandra.variable}`}>{children}</body>
+      <body className={`${roboto.variable} ${open_sans.variable} ${alexandra.variable}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
