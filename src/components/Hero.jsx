@@ -2,12 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import BorderedButton from './common/BorderedButton'
 import UnBorderedButton from './common/UnBorderedButton'
-import HeroImageOne from '../../public/images/hero-image1.png'
+import HeroImageFirst from '../../public/images/hero-image1.png'
+import HeroImageSecond from '../../public/images/hero-image2.png'
 
 const Hero = () => {
   return (
 <>
-      <section>
+      <section className='bg-hero-dark-pattern bg-no-repeat bg-contain pt-[127px] bg-right'>
         <div className='container'>
           <div className='flex items-center'>
             <div className='pt-[118px] '>
@@ -21,13 +22,21 @@ const Hero = () => {
                 <BorderedButton>Прочитать подробнее</BorderedButton>
               </div>
             </div>
-            <div className=''>
+            <div className='flex items-center relative'>
              <Image
-                src={HeroImageOne} 
-                width={500}
-                height={500}
+                src={HeroImageFirst} 
+                width={400}
+                height={400}
                 alt="Picture of the author"
                 />
+               <div className='absolute bottom-[-26%] right-[-45%]'>
+                <Image
+                  src={HeroImageSecond}
+                  width={400}
+                  height={400}
+                  alt="Picture of the author"
+                />
+               </div>
             </div>
           </div>
         </div>

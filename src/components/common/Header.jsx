@@ -26,7 +26,7 @@ const navMenu = [
 
 const Header = () => {
   return (
-    <header className='pt-[127px]'>
+    <header className='pt-[127px] absolute top-0 left-0 w-full bg-transparent'>
       <div className="container">
         <nav className="nav">
           <ul className='flex gap-6'>
