@@ -26,10 +26,10 @@ const Footer = () => {
           <div className='flex order-3 mt-6 md:order-none opacity-60'> Разработка сайта GUD team </div>
           
           <div className='flex flex-col gap-3 underline md:items-end'>
-            <button className="" type="button">Наверх</button>
-            <a className="" href="http://">Политика конфиденциальности</a>
-            <a className="" href="http://">Договор-оферта</a>
-            <a className="" href="http://">Условия доставки</a>
+            <button className="inline-flex mb-2" type="button">Наверх</button>
+            <a className="inline-flex mb-2" href="http://">Политика конфиденциальности</a>
+            <a className="inline-flex mb-2" href="http://">Договор-оферта</a>
+            <a className="inline-flex mb-2" href="http://">Условия доставки</a>
           </div>
         </div>
       </div>
