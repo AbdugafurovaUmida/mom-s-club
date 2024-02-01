@@ -46,12 +46,21 @@ const plan = [
       text: 'Урок 1',
       name:[
         {
-            title:"Внешний вид новорожденных и их особенности",
-            title:"Иследования проводимые с ним в роддоме",
+            title:"Внешний вид новорожденных и их особенности"
+        },
+        {
+            title:"Иследования проводимые с ним в роддоме",  
+        },
+        {
             title:"Первые прививки", 
+        },
+        {
             title:"Рефлексы", 
+        },
+        {
             title:"Пеленание" 
         }
+         
       ]
       
     },
@@ -61,10 +70,17 @@ const plan = [
       name:[
         {
             title:"Первое купание",
-            title:"Гигиена мальчиков и девочек",
-            title:"Уход за ногтями, ушками иносом",
-            title:"Полезные покупки",      
-        }
+        },
+        {
+            title:"Гигиена мальчиков и девочек",   
+        },
+        {
+            title:"Уход за ногтями, ушками иносом", 
+        },
+        {
+            title:"Полезные покупки", 
+        },
+        
       ]
     },
     {
@@ -73,10 +89,22 @@ const plan = [
       name:[
         {
             title:"Как вырабатывается молоко",
-            title:"Как наладить грудное вскармливание",
-            title:"Сцеживание",   
-            title:"'Диеты' при гв",
-            title:"Полезные покупки",    
+        },
+        {
+           
+            title:"Полезные покупки", 
+        },
+        {
+            title:"Как наладить грудное вскармливание", 
+        },
+        {
+            title:"Сцеживание", 
+        },
+        {
+            title:"'Диеты' при гв", 
+        },
+        {
+            title:"Полезные покупки", 
         }
       ]
      
@@ -87,11 +115,20 @@ const plan = [
         name:[
             {
                 title:"Виды смесей",
+            },
+            {
                 title:"Как подобрать подходящую смес",
-                title:"Способ хранения",   
-                title:"Смешанное вскармливание",
-                title:"Полезные покупки",    
+            },
+            {
+                title:"Способ хранения", 
+            },
+            {      
+                title:"Смешанное вскармливание", 
+            },
+            {
+                title:"Полезные покупки", 
             }
+       
           ]
       
     },
@@ -101,10 +138,15 @@ const plan = [
         name:[
             {
                 title:"Режим сна",
+            },
+            {
                 title:"Мелатанин",
-                title:"Почему ребенок не спит?",   
+            },
+            {
+                title:"Почему ребенок не спит?", 
+            },
+            {
                 title:"Как наладить сон ",
-              
             }
           ]
    
@@ -115,11 +157,23 @@ const plan = [
         name:[
             {
                 title:"Когда начать первые прикорм",
+            },
+            {
                 title:"Метод BLW",
-                title:"Безопасная подача",   
-                title:"Что делать если ребенок подавился? ",
-                title:"Полезные покупки ",
+            },
+            {
+                title:"Метод BLW",
+            },
+            {
+                title:"Безопасная подача",    
+            },
+            {  
+                title:"Что делать если ребенок подавился? ",    
+            },
+            {
+                title:"Полезные покупки ", 
             }
+            
           ]
    
     },
@@ -129,9 +183,12 @@ const plan = [
         name:[
             {
                 title:"Внезапная младенческая смерть",
-                title:"Синдром встряхнутого ребенка",
+            },
+            {
+                title:"Синдром встряхнутого ребенка", 
+            },
+            {
                 title:"Как избежать этого",   
-            
             }
           ]
     },
@@ -141,10 +198,14 @@ const plan = [
         name:[
             {
                 title:"Прорезывание зубов",
+            },
+            {
                 title:" Массаж",
-                title:"Дисплазия",   
-            
+            },
+            {
+                title:"Дисплазия",  
             }
+           
           ]
       
     },
@@ -158,32 +219,34 @@ const Plan = () => {
                 <h3 className='text-secondaryDark alexandra text-[100px] not-italic font-normal leading-[150px] text-center'>
                 Подробнее о курсе
                 </h3>
-                <div className='lg:relative relative flex justify-center lg:flex items-center lg:justify-between pb-[82px]'>
-                    <div className='w-[586px]'>
-                        <p className='text-base not-italic font-bold leading-6 text-dark roboto py-[18px]'>Курс для будущих мам, в которых есть:</p>
+                <div className='grid justify-center gap-8 lg:grid-cols-2'>
+                    <div className='max-w-[586px] w-full'>
+                        <ul><p className='text-base not-italic font-bold leading-6 text-dark roboto py-[18px]'>Курс для будущих мам, в которых есть:</p>
                         {plan.map(item =>(
-                          <p className='text-base not-italic font-light leading-6 text-dark roboto py-[5px]'><span className='inline-block align-middle mr-[18px]'><Line/></span>{item.text}</p>  
-                        ))}
+                          <li className='text-base not-italic font-light leading-6 text-dark roboto py-[5px]'><span className='inline-block align-middle mr-[18px]'><Line/></span>{item.text}</li>  
+                        
+
+                        ))}</ul>
                         <p className='text-base not-italic font-bold leading-6 text-dark roboto pt-[14px] pb-[33px]'>И многое другое... Оформите предзаказ по самым низким ценам</p>
                         
                         <UnBorderedButton>Оформить</UnBorderedButton>
                     </div>
-                    <div className=''>
-                        <Image src="/images/hero-image1.png" width={300} height={300} className='lg:absolute lg:top-[-13px] lg:left-[572px] lg:right-0 lg:bottom-0 absolute right-[71px] bottom-[-268px]'/>
-                        <Image src="/images/aboutimg.png" width={300} height={300}  className='lg:absolute lg:top-[101px] lg:left-[677px] lg:right-0 lg:bottom-0 absolute right-[-42px] bottom-[-377px]'/>
+                    <div className='relative min-h-[320px] h-full'>
+                        <Image src="/images/hero-image1.png" width={300} height={300} className='absolute top-0 left-0'/>
+                        <Image src="/images/aboutimg.png" width={300} height={300}  className='absolute top-[109px] left-[110px] '/>
                     </div>
                 </div>
-            
-                <h3 className='text-secondaryDark alexandra text-[100px] not-italic font-normal leading-[150px] text-center'>Программа курса</h3>
-                    <div className='relative flex items-center justify-between'>
+           
+                <h3 className='text-secondaryDark alexandra text-[100px] not-italic font-normal leading-[150px] text-center pt-[82px] pb-[20px]'>Программа курса</h3>
+                    <div className='relative block lg:items-center lg:justify-between lg:flex'>
                                                               
-                    <div className='grid grid-cols-4 gap-8'>
+                    <div className='grid grid-cols-2 gap-8'>
                     {list.map((data, index) =>(
                         <div>
                             <ul key={index} >
                                 <li className='text-lg font-bold leading-7 roboto text-dark pb-2.5'>{data.text}</li>
                                 {data.name.map(item=>(
-                                    <li className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><Bird/>{item.title}</li>
+                                    <li className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><div className='w-[17px] h-[15px] mr-3'><Bird/></div>{item.title}</li>
                                    
                                 ))}
                             </ul>
@@ -193,9 +256,9 @@ const Plan = () => {
                    
                     </div>         
                     <div>
-                        <Image src="/images/hero-image1.png" width={400} height={400}/>
+                        <Image src="/images/hero-image1.png" width={500} height={500}/>
                     </div>             
-                    <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:absolute hidden   left-[-144px] right-0 bottom-[347px]'/>                               
+                    <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='absolute top-[-203px] left-[-170px]'/>                               
             </div>
             
             </div>
