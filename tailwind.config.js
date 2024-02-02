@@ -30,6 +30,9 @@ module.exports = {
         regular: "400",
         medium: "500",
         semibold: "600",
+      },
+      boxShadow: {
+        'box-sh5': ' 5px 5px 20px 0px rgba(77, 77, 77, 0.25)',
       }
     },
   },
