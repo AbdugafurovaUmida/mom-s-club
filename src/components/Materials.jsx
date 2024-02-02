@@ -8,7 +8,7 @@ import UnBorderedButton from './common/UnBorderedButton'
 import girl from './../../public/images/girl.png'
 const Materials = () => {
     return (
-        <section className='mt-[100px] mb-[90px]'>
+        <section className='md:mt-[200px] mt-[100px] md:mb-[90px] mb-[121px]'>
             <div className="container">
                 <div className="pt-[62px] md:pt-[75px] x-6 px-8 md:px-[60px] bg-white border inner-container border-[3px] border-solid rounded-[30px] border-[#F1DBDA]">
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] leading-[100%] text-secondaryDark text-center'>Бесплатные материалы</h3>

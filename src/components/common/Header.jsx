@@ -37,7 +37,7 @@ const Header = () => {
       <div className="container">
         <nav className="nav">
           <button className='md:hidden flex ml-auto pr-[20px] z-50 relative' onClick={() => setOpen((prev) => !prev)}><Image className='text-right' src={HamburgerMenu} alt={HamburgerMenu} width={60} height={25} /></button>
-          <ul className={`md:flex gap-6 ${isOpen ? 'flex flex-col items-center bg-[#DDD5F0] fixed top-0 left-0 w-full h-full pt-[125px] z-10' : 'hidden flex-row'}`}>
+          <ul className={`md:flex gap-6 transition-all !duration-1000 md:translate-y-0 ${isOpen ? 'flex flex-col items-center bg-[#DDD5F0] fixed top-0 left-0 w-full h-full pt-[125px] z-10 translate-y-0 ' : 'hidden flex-row translate-y-[-600px] h-0'}`}>
             {
               navMenu.map(item => (
                 <li key={item.id} onClick={() => setOpen((prev) => !prev)}>

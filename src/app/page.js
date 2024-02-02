@@ -9,10 +9,10 @@ const HomePage = () => {
   return (
     <main className='h-full min-h-screen'>
       <Hero />
-      <Materials />
       <Quote/>
       <Plan/>
       <Products />
+      <Materials />
     </main>
   )
 }

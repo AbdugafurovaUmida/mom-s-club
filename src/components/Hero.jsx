@@ -24,15 +24,15 @@ const Hero = () => {
             </div>
             <div className='flex items-center relative'>
              <Image
-             className='md:w-[400px] w-[286px]'
+             className='lg:w-[400px] w-[286px]'
                 src={HeroImageFirst} 
                 width={400}
                 height={400}
                 alt="Picture of the author"
                 />
-               <div className='absolute md:bottom-[-26%] md:right-[-45%] bottom-[-45px] right-[-40px]'>
+               <div className='absolute lg:bottom-[-26%] md:bottom-[-14%] lg:right-[-45%] md:right-[-5%] bottom-[-45px] right-[-40px]'>
                 <Image
-                  className='md:w-[400px] w-[200px]'
+                  className='lg:w-[400px] w-[200px]'
                   src={HeroImageSecond}
                   width={400}
                   height={400}
