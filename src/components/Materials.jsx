@@ -17,17 +17,17 @@ const Materials = () => {
                         <div className='flex flex-col justify-between w-[259px] max-h-[371px] items-center mb-8'>
                             <h5 className='mb-6 font-semibold text-dark'>Календарь на 2 месяца</h5>
                             <Image className='rotate-90 shadow-box-sh5' src={calendar} alt="" width={183} height={257} />
-                            <BorderedButton className='font-semibold' download>Скачать календарь</BorderedButton>
+                            <BorderedButton className='font-semibold'>Скачать календарь</BorderedButton>
                         </div>
                         <div className='flex flex-col justify-between w-[259px] max-h-[371px] items-center mb-8'>
                             <h5 className='mb-6 mb-[30px] font-semibold  text-dark'>Дневник прикорма</h5>
                             <Image className='mb-[30px] shadow-box-sh5' src={tracker} alt="" width={165} height={234} />
-                            <BorderedButton download>Скачать трекер</BorderedButton>
+                            <BorderedButton >Скачать трекер</BorderedButton>
                         </div>
                         <div className='flex flex-col justify-between w-[259px] max-h-[371px] items-center mb-8'>
                             <h5 className='mb-6 mb-[30px] font-semibold  text-dark'>Трекер привычек на 6 недель</h5>
                             <Image className='rotate-90 shadow-box-sh5' src={daily} alt="" width={183} height={257} />
-                            <BorderedButton download>Скачать дневник</BorderedButton>
+                            <BorderedButton >Скачать дневник</BorderedButton>
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@ const Materials = () => {
                             <UnBorderedButton className='mt-8'>Присоединиться</UnBorderedButton>
                         </div>
 
-                        <div className='xl:absolute mb-[-14px] sm:mb-[-22px]  lg:bottom-[-23px] xl:right-[-80px]'>
+                        <div className='xl:absolute relative bottom-[-23px] xl:right-[-80px]'>
                             <Image src={girl} alt='girl' width={547} height={612} />
                         </div>
                     </div>
