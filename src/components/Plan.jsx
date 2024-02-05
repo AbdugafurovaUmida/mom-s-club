@@ -216,14 +216,14 @@ const Plan = () => {
     <div>
         <div className="container">
             <div className='pt-[76px] pr-[85px] pb-[46px] pl-[60px] border-[3px] border-solid border-[#F1DBDA] rounded-[30px]'>
-                <h3 className='text-secondaryDark alexandra text-[100px] not-italic font-normal leading-[150px] text-center'>
+                <h3 className='text-secondaryDark alexandra text-[70px] lg:text-[100px] not-italic font-normal leading-[50px] lg:leading-[150px] text-center mb-[20px]'>
                 Подробнее о курсе
                 </h3>
                 <div className='grid justify-center gap-8 lg:grid-cols-2'>
                     <div className='max-w-[586px] w-full'>
                         <ul><p className='text-base not-italic font-bold leading-6 text-dark roboto py-[18px]'>Курс для будущих мам, в которых есть:</p>
                         {plan.map(item =>(
-                          <li className='text-base not-italic font-light leading-6 text-dark roboto py-[5px]'><span className='inline-block align-middle mr-[18px]'><Line/></span>{item.text}</li>  
+                          <li className='text-base not-italic font-light leading-6 text-dark roboto py-[5px]'><div className='w-[20px] inline-block align-middle mr-[18px]'><Line/></div>{item.text}</li>  
                         
 
                         ))}</ul>
@@ -233,14 +233,14 @@ const Plan = () => {
                     </div>
                     <div className='relative min-h-[320px] h-full'>
                         <Image src="/images/hero-image1.png" width={300} height={300} className='absolute top-0 left-0'/>
-                        <Image src="/images/aboutimg.png" width={300} height={300}  className='absolute top-[109px] left-[110px] '/>
+                        <Image src="/images/aboutimg.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
                     </div>
                 </div>
            
-                <h3 className='text-secondaryDark alexandra text-[100px] not-italic font-normal leading-[150px] text-center pt-[82px] pb-[20px]'>Программа курса</h3>
+                <h3 className='text-secondaryDark alexandra text-[70px] lg:text-[100px] not-italic font-normal leading-[50px] lg:leading-[150px] text-center pt-[82px] lg:pb-[20px] pb-[50px]'>Программа курса</h3>
                     <div className='relative block lg:items-center lg:justify-between lg:flex'>
                                                               
-                    <div className='grid grid-cols-2 gap-8'>
+                    <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
                     {list.map((data, index) =>(
                         <div>
                             <ul key={index} >
@@ -258,7 +258,7 @@ const Plan = () => {
                     <div>
                         <Image src="/images/hero-image1.png" width={500} height={500}/>
                     </div>             
-                    <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='absolute top-[-203px] left-[-170px]'/>                               
+                    <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='absolute top-[-203px] left-[-170px] '/>                               
             </div>
             
             </div>
