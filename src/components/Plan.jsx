@@ -223,7 +223,7 @@ const Plan = () => {
                     <div className='max-w-[586px] w-full'>
                         <ul><p className='text-base not-italic font-bold leading-6 text-dark roboto py-[18px]'>Курс для будущих мам, в которых есть:</p>
                         {plan.map(item =>(
-                          <li className='text-base not-italic font-light leading-6 text-dark roboto py-[5px]'><div className='w-[20px] inline-block align-middle mr-[18px]'><Line/></div>{item.text}</li>  
+                          <li key={item.id} className='text-base not-italic font-light leading-6 text-dark roboto py-[5px]'><div className='w-[20px] inline-block align-middle mr-[18px]'><Line/></div>{item.text}</li>  
                         
 
                         ))}</ul>
@@ -244,7 +244,7 @@ const Plan = () => {
                     {list.map((data, index) =>(
                         <div>
                             <ul key={index} >
-                                <li className='text-lg font-bold leading-7 roboto text-dark pb-2.5'>{data.text}</li>
+                                <li key={data.id} className='text-lg font-bold leading-7 roboto text-dark pb-2.5'>{data.text}</li>
                                 {data.name.map(item=>(
                                     <li className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><div className='w-[17px] h-[15px] mr-3'><Bird/></div>{item.title}</li>
                                    
@@ -258,7 +258,7 @@ const Plan = () => {
                     <div>
                         <Image src="/images/hero-image1.png" width={500} height={500}/>
                     </div>             
-                    <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='absolute top-[-203px] left-[-170px] '/>                               
+                    <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden'/>                               
             </div>
             
             </div>
