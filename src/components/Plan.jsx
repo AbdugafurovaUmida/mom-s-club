@@ -242,11 +242,11 @@ const Plan = () => {
                                                               
                     <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
                     {list.map((data, index) =>(
-                        <div>
-                            <ul key={index} >
+                        <div key={index}>
+                            <ul>
                                 <li key={data.id} className='text-lg font-bold leading-7 roboto text-dark pb-2.5'>{data.text}</li>
-                                {data.name.map(item=>(
-                                    <li className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><div className='w-[17px] h-[15px] mr-3'><Bird/></div>{item.title}</li>
+                                {data.name.map((item, index)=>(
+                                    <li key={index} className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><div className='w-[17px] h-[15px] mr-3'><Bird/></div>{item.title}</li>
                                    
                                 ))}
                             </ul>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Instagram from '../../../public/images/instagram-icon.svg'
 import Telegram from '../../../public/images/telegram-icon.svg'
-import Link from 'next/link';
 import Image from 'next/image';
 
 const Footer = () => {
@@ -15,16 +14,16 @@ const Footer = () => {
               <a href="tel:++7 999 999 99 99">+7 999 999 99 99</a>
             </li>
             <li className="flex gap-4 mb-2 socials">
-              <Link href="http://"><Image src={Instagram} alt="instagram logo" /></Link>
-              <Link href="http://"><Image src={Telegram} alt="tetegram logo" /></Link>
+              <a href='#'><Image src={Instagram} alt="instagram logo" /></a>
+              <a href="#"><Image src={Telegram} alt="tetegram logo" /></a>
             </li>
             <li className='mb-2'>
               <a className='underline' href="http://">Связаться</a>
             </li>
           </ul>
-          
+
           <div className='flex order-3 mt-6 md:order-none opacity-60'> Разработка сайта GUD team </div>
-          
+
           <div className='flex flex-col gap-3 underline md:items-end'>
             <button className="inline-flex mb-2" type="button">Наверх</button>
             <a className="inline-flex mb-2" href="http://">Политика конфиденциальности</a>
