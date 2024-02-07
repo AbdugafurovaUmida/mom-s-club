@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container px-8">
         <div className='flex flex-col justify-between md:items-end md:flex-row'>
           <ul className='flex flex-col gap-3'>
-            <li className='mb-2'>Kasymova</li>
+            <li className='mb-2'>Хамзаева Нигора</li>
             <li className='mb-2'>
-              <a href="tel:++7 999 999 99 99" target="_blank">+7 999 999 99 99</a>
+              <a href="tel:+998909999897" target="_blank">+998909999897</a>
             </li>
             <li className="flex gap-4 mb-2 socials">
               <a href='https://www.instagram.com/momsclubuz/' target="_blank"><Image src={Instagram} alt="instagram logo" /></a>
