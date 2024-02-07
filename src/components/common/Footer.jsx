@@ -9,20 +9,21 @@ const Footer = () => {
       <div className="container px-8">
         <div className='flex flex-col justify-between md:items-end md:flex-row'>
           <ul className='flex flex-col gap-3'>
-            <li className='mb-2'>Елизавета Евгеньевна Шац</li>
+            <li className='mb-2'>Kasymova</li>
             <li className='mb-2'>
-              <a href="tel:++7 999 999 99 99">+7 999 999 99 99</a>
+              <a href="tel:++7 999 999 99 99" target="_blank">+7 999 999 99 99</a>
             </li>
             <li className="flex gap-4 mb-2 socials">
-              <a href='#'><Image src={Instagram} alt="instagram logo" /></a>
-              <a href="#"><Image src={Telegram} alt="tetegram logo" /></a>
+              <a href='https://www.instagram.com/momsclubuz/' target="_blank"><Image src={Instagram} alt="instagram logo" /></a>
+              <a href="#" target="_blank"><Image src={Telegram} alt="tetegram logo" /></a>
             </li>
             <li className='mb-2'>
-              <a className='underline' href="http://">Связаться</a>
+              <a className='underline' target="_blank" href="https://t.me/momsclubuz
+">Связаться</a>
             </li>
           </ul>
 
-          <div className='flex order-3 mt-6 md:order-none opacity-60'> Разработка сайта GUD team </div>
+          <a href='https://www.instagram.com/gud_team_/' target="_blank" className='flex order-3 mt-6 md:order-none opacity-60'> Разработка сайта GUD team </a>
 
           <div className='flex flex-col gap-3 underline md:items-end'>
             <button className="inline-flex mb-2" type="button">Наверх</button>

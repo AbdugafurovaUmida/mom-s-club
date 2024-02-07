@@ -30,7 +30,7 @@ const Hero = () => {
                 height={400}
                 alt="Picture of the author"
                 />
-               <div className='absolute lg:bottom-[-26%] md:bottom-[-14%] lg:right-[-45%] md:right-[-5%] bottom-[-45px] right-[-40px]'>
+               <div className='absolute lg:bottom-[-26%] md:bottom-[-14%] lg:right-[-45%] md:right-[-5%] bottom-[-60px] right-[-22px]'>
                 <Image
                   className='lg:w-[400px] w-[200px]'
                   src={HeroImageSecond}

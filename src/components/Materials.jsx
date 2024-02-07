@@ -33,7 +33,7 @@ const Materials = () => {
 
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[150%] text-secondaryDark text-center'>Об авторе</h3>
                     <div className='relative flex flex-wrap justify-start'>
-                        <div className='flex flex-col  gap-[16px] max-w-[570px] w-full text-dark xl:pb-[100px]'>
+                        <div className='flex flex-col lg:items-start items-center gap-[16px] max-w-[570px] w-full text-dark xl:pb-[100px]'>
                             <p className=''>Всю жизнь я жила с установками о материнстве! Слышала страшилки о недосыпаниях, усталости, капризных детях, дне сурка и поняла, что хочу по-другому, хочу быть счастливой с ребёнком!   </p>
                             <p>Начала искать информацию, выстраивать ее, чтобы взглянуть на вещи по-новому! Я открыла для себя прекрасный огромный мир гармоничной жизни с ребёнком с первых месяцев его жизни!</p>
                             <p>Благодаря моим знаниям и планированию, жизнь, на протяжении взросления Саши, интересна и полноценна! Я провожу вечера с мужем, с собой, друзьями, занимаюсь проектами, читаю книги и путешествую </p>

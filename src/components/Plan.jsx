@@ -232,19 +232,19 @@ const Plan = () => {
                         <UnBorderedButton>Оформить</UnBorderedButton>
                     </div>
                     <div className='relative min-h-[320px] h-full'>
-                        <Image src="/images/hero-image1.png" width={300} height={300} className='absolute top-0 left-0'/>
-                        <Image src="/images/aboutimg.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
+                          <Image src="/images/hero-image1.png" width={250} height={300} className='absolute top-0 left-0 lg:w-[300px]'/>
+                        <Image src="/images/aboutimg.png" width={220} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[28%] left-[30%] lg:w-[300px]'/>
                     </div>
                 </div>
            
-                <h3 className='text-secondaryDark alexandra text-[70px] lg:text-[100px] not-italic font-normal leading-[50px] lg:leading-[150px] text-center pt-[82px] lg:pb-[20px] pb-[50px]'>Программа курса</h3>
+                <h3 className='text-secondaryDark alexandra text-[70px] lg:text-[100px] not-italic font-normal leading-[50px] lg:leading-[150px] text-center lg:pt-[82px] pt-0 lg:pb-[20px] pb-[50px]'>Программа курса</h3>
                     <div className='relative block lg:items-center lg:justify-between lg:flex'>
                                                               
-                    <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
+                    <div className='grid grid-cols-1 gap-10 lg:grid-cols-2'>
                     {list.map((data, index) =>(
                         <div key={index}>
                             <ul>
-                                <li key={data.id} className='text-lg font-bold leading-7 roboto text-dark pb-2.5'>{data.text}</li>
+                                <li key={data.id} className='text-lg font-bold leading-7 roboto text-dark pb-3'>{data.text}</li>
                                 {data.name.map((item, index)=>(
                                     <li key={index} className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><div className='w-[17px] h-[15px] mr-3'><Bird/></div>{item.title}</li>
                                    
