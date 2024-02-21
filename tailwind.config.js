@@ -33,6 +33,7 @@ module.exports = {
       },
       boxShadow: {
         'box-sh5': ' 5px 5px 20px 0px rgba(77, 77, 77, 0.25)',
+        'buttonShadow': ' 2px 8px 8px 0px rgba(255, 255, 255, 0.6)'
       }
     },
   },
