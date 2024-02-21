@@ -33,10 +33,7 @@ const plan = [
         id: 7,
         text: 'Внезапная младенческая смерть'
     },
-    {
-        id: 8,
-        text: 'Сон ребенка'
-    },
+ 
     
   ]
 
@@ -49,7 +46,7 @@ const plan = [
             title:"Внешний вид новорожденных и их особенности"
         },
         {
-            title:"Иследования проводимые с ним в роддоме",  
+            title:"Иследования, проводимые с ним в роддоме",  
         },
         {
             title:"Первые прививки", 
@@ -75,7 +72,7 @@ const plan = [
             title:"Гигиена мальчиков и девочек",   
         },
         {
-            title:"Уход за ногтями, ушками иносом", 
+            title:"Уход за ногтями, ушками и носом", 
         },
         {
             title:"Полезные покупки", 
@@ -89,10 +86,6 @@ const plan = [
       name:[
         {
             title:"Как вырабатывается молоко",
-        },
-        {
-           
-            title:"Полезные покупки", 
         },
         {
             title:"Как наладить грудное вскармливание", 
@@ -114,7 +107,7 @@ const plan = [
         text: 'Урок 4',
         name:[
             {
-                title:"Виды смесей",
+                title:"Виды смесь",
             },
             {
                 title:"Как подобрать подходящую смес",
@@ -140,7 +133,7 @@ const plan = [
                 title:"Режим сна",
             },
             {
-                title:"Мелатанин",
+                title:"Мелатoнин",
             },
             {
                 title:"Почему ребенок не спит?", 
@@ -157,9 +150,6 @@ const plan = [
         name:[
             {
                 title:"Когда начать первые прикорм",
-            },
-            {
-                title:"Метод BLW",
             },
             {
                 title:"Метод BLW",
@@ -228,12 +218,11 @@ const Plan = () => {
 
                         ))}</ul>
                         <p className='text-base not-italic font-bold leading-6 text-dark roboto pt-[14px] pb-[33px]'>И многое другое... Оформите предзаказ по самым низким ценам</p>
-                        
-                        <UnBorderedButton>Оформить</UnBorderedButton>
+                   
                     </div>
                     <div className='relative min-h-[320px] h-full'>
-                        <Image src="/images/hero-image1.png" width={300} height={300} className='absolute top-0 left-0'/>
-                        <Image src="/images/aboutimg.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
+                        <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={300} height={300} className='absolute top-0 left-0'/>
+                        <Image src="/images/wepik-export-20240221114740vYIp-Photoroom.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
                     </div>
                 </div>
            
@@ -256,7 +245,7 @@ const Plan = () => {
                    
                     </div>         
                     <div>
-                        <Image src="/images/hero-image1.png" width={500} height={500}/>
+                        <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={500} height={500}/>
                     </div>             
                     <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden'/>                               
             </div>
