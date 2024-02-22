@@ -34,9 +34,11 @@ const Products = () => {
           {
             products.map((item) => (
               <ProductsCard item={item} />
+           
             ))
           }
         </div>
+      
         </div>
     </section>
   )

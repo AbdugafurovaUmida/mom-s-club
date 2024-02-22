@@ -222,7 +222,7 @@ const Plan = () => {
                     </div>
                     <div className='relative min-h-[320px] h-full'>
                         <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={300} height={300} className='absolute top-0 left-0'/>
-                        <Image src="/images/wepik-export-20240221114740vYIp-Photoroom.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
+                        <Image src="/images/imageblok.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
                     </div>
                 </div>
            
@@ -245,7 +245,7 @@ const Plan = () => {
                    
                     </div>         
                     <div>
-                        <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={500} height={500}/>
+                        <Image src="/images/hero-image1.png" width={500} height={500}/>
                     </div>             
                     <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden'/>                               
             </div>
