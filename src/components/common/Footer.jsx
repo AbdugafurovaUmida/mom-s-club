@@ -21,7 +21,7 @@ const Footer = () => {
               <a className="transition duration-200 hover:-translate-y-3" href="https://t.me/momsclubuz" target="_blank"><Image src={Telegram} alt="tetegram logo" /></a>
             </li>
             <li className='mb-2'>
-              <a className='underline hover:opacity-60' target="_blank" href="tel:998 90-822-99-69">Связаться</a>
+              <a className='underline hover:opacity-60' target="_blank" href="https://t.me/momsclubuzb">Связаться</a>
             </li>
           </ul>
           <p
