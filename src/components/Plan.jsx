@@ -222,7 +222,7 @@ const Plan = () => {
                     </div>
                     <div className='relative min-h-[320px] h-full'>
                         <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={300} height={300} className='absolute top-0 left-0'/>
-                        <Image src="/images/wepik-export-20240221114740vYIp-Photoroom.png" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
+                        <Image src="/images/wepik-export-202402221738375zEz.jpeg" width={300} height={300}  className='absolute lg:top-[26%] lg:left-[73%px] md:top-[30%] md:left-[21%] sm:top-[30%] sm:left-[24%] top-[20%] left-[36%]'/>
                     </div>
                 </div>
            
