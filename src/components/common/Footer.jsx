@@ -30,7 +30,7 @@ const Footer = () => {
             <a
               target="_blank"
               href='https://www.instagram.com/gud_team_/'
-              className='font-bold transition duration-300 font-white hover:opacity-80 hover:underline'> GUD team </a> </p>
+              className='font-bold transition duration-300 opacity-80 font-white hover:opacity-100 hover:underline hover:scale-125 hover:translate-x-6'> GUD team </a> </p>
 
           <div className='flex flex-col md:items-end'>
             <button

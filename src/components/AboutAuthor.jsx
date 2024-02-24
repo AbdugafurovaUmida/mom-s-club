@@ -27,7 +27,6 @@ const AboutAuthor = () => {
           </div>
 
           <div className='max-w-full xl:max-w-[49%] w-full flex justify-around xl:justify-start '>
-            {/* xl:absolute relative bottom-[-23px] xl:right-[-80px] */}
             <Image className="hidden md:inline-block shadow-picShadow max-w-[340px] w-full max-h-[340px] h-auto" src={author} alt='author' width={340} height={340} />
             <Image className="xl:self-end relative xl:left-[-40px] xl:bottom-20 shadow-picShadow  max-w-[340px] w-full h-auto " src={certificate} alt='certificate' width={340} height={330} />
           </div>
