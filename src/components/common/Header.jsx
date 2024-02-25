@@ -41,7 +41,7 @@ const Header = () => {
             {
               navMenu.map(item => (
                 <li key={item.id} onClick={() => setOpen((prev) => !prev)}>
-                  <a className='md:text-sm text-lg' href={item.link}>{item.text}</a>
+                  <a className='md:text-base text-sm' href={item.link}>{item.text}</a>
                 </li>
               ))
             }
