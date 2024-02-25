@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import BorderedButton from './common/BorderedButton'
 import UnBorderedButton from './common/UnBorderedButton'
-import HeroImageFirst from '../../public/images/hero-image1.png'
-import HeroImageSecond from '../../public/images/hero-image2.png'
+import HeroImageFirst from '../../public/images/hero2.png'
+import HeroImageSecond from '../../public/images/hero3.png'
 
 const Hero = () => {
   return (
