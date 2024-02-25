@@ -8,12 +8,12 @@ const navMenu = [
   {
     id: 1,
     link: '#about',
-    text: 'О планере'
+    text: 'О курсе'
   },
   {
     id: 2,
     link: '#purchase',
-    text: 'Купить'
+    text: 'Галерея'
   },
   {
     id: 3,
