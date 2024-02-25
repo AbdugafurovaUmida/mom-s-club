@@ -13,13 +13,13 @@ const Hero = () => {
           <div className='flex items-center md:flex-row flex-col'>
             <div className='md:pt-[118px] pt-[80px] md:text-left text-center'>
               <h1>
-                <span className='block font-regular mb-4 text-lg'>Mom&#x2019;s</span>
-                <span className='alexandra text-2xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block'>Club and Course</span>
+                {/* <span className='block font-regular mb-4 text-lg'>Mom&#x2019;s</span> */}
+                <span className='alexandra text-2xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block'>Moms Club</span>
               </h1>
-              <p className=''>Первый курс по уходу за новорождёнными для будущих мам в Узбекистане</p>
+              <p className=' text-[24px] !leading-[32px] max-w-[590px] w-full'>Первый курс по уходу за новорождёнными для будущих мам в Узбекистане</p>
               <div className='mt-11 flex md:flex-row flex-col md:items-start items-center gap-5'>
-                <UnBorderedButton>Оформить курс</UnBorderedButton>
-                <BorderedButton>Прочитать подробнее</BorderedButton>
+                <UnBorderedButton>Записаться</UnBorderedButton>
+                <BorderedButton customLink={'https://www.instagram.com/momsclubuz/'} blank="blank">Прочитать подробнее</BorderedButton>
               </div>
             </div>
             <div className='flex items-center relative'>
