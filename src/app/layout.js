@@ -49,7 +49,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${open_sans.variable} ${alexandra.variable}`}>
+      <body className={`${roboto?.variable} ${open_sans?.variable} ${alexandra?.variable}`}>
         <Header />
         {children}
         <Footer />
