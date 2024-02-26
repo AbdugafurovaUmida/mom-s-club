@@ -4,6 +4,7 @@ import AboutAuthor from '@/components/AboutAuthor'
 import Plan from '@/components/Plan'
 import Products from '@/components/Products'
 import React from 'react'
+import Modal from '../components/modal/Modal'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Plan/>
       <Products />
       <Materials />
+      <Modal/>
     </main>
   )
 }
