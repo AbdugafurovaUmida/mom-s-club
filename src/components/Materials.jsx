@@ -37,7 +37,7 @@ const Materials = () => {
                 <div className="pt-[62px] md:pt-[75px] px-8 md:px-[60px] bg-white inner-container border-[3px] border-solid rounded-[30px] border-[#F1DBDA]">
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Бесплатные материалы</h3>
 
-                    <div className="flex flex-wrap items-end  justify-center md:justify-between roboto cards-wrapper mb-[60px] lg:mb-[98px]">
+                    <div className="flex flex-wrap items-end gap-4  justify-center md:justify-between roboto cards-wrapper mb-[60px] lg:mb-[98px]">
                         {
                             materials.map((item) => (
                                 <MaterialCard item={item} key={item.id} />
