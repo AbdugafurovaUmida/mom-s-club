@@ -7,10 +7,10 @@ const MaterialCard = ({item}) => {
     <h5 className='mb-6 font-semibold text-dark'>
         {item.title}
     </h5>
-    <Image className='rotate-90 shadow-box-sh5' src={item.image} alt={item.image} width={183} height={257} />
+    <Image className='shadow-box-sh5 mb-8 rounded-xl' src={item.image} alt={item.image} width={183} height={257} />
     <BorderedButton
         fileName={item.fileName}
-        customLink={item.link}
+        customLink={`/assets/${item.link}.PNG`}
         className='font-semibold'
     >Скачать</BorderedButton>
 </div>

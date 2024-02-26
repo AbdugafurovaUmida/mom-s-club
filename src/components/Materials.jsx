@@ -1,32 +1,32 @@
 'use client';
 import React from 'react'
-import calendar from '../../public/images/calendar.png'
+import pregnancyBag from '../../public/images/pregnancy-bag.jpg'
 import tracker from '../../public/images/tracker.png'
 import daily from '../../public/images/daily.png'
 import MaterialCard from './MaterialCard';
-// import material1 from '../../public/download/material1.PNG'
+
 const materials = [
     {
         id: 1,
         title: 'Сумка в роддом',
-        image: calendar,
+        image: pregnancyBag,
         fileName: 'roddom-sumka.png',
-        link: '/download/material1.PNG'
+        link: 'material1'
     },
-    {
-        id: 2,
-        title: 'Сумка в роддом',
-        image: tracker,
-        fileName: 'roddom-sumka.png',
-        link: '/download/material1.PNG'
-    },
-    {
-        id: 3,
-        title: 'Сумка в роддом',
-        image: daily,
-        fileName: 'roddom-sumka.png',
-        link: '/download/material1.PNG'
-    },
+    // {
+    //     id: 2,
+    //     title: 'Сумка в роддом',
+    //     image: tracker,
+    //     fileName: 'roddom-sumka.png',
+    //     link: '/download/material1.PNG'
+    // },
+    // {
+    //     id: 3,
+    //     title: 'Сумка в роддом',
+    //     image: daily,
+    //     fileName: 'roddom-sumka.png',
+    //     link: '/download/material1.PNG'
+    // },
 ];
 
 const Materials = () => {
