@@ -27,7 +27,7 @@ const products = [
     file: 3,
     elLink: 'https://www.instagram.com/p/Cic86lwtLk-/'
   }
-]
+];
 
 const Products = () => {
   return (
