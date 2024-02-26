@@ -24,6 +24,7 @@ const open_sans = Open_Sans({
 const alexandra = localFont({ src: '../../public/fonts/Alexandra/alexandrazeferinoone.ttf', variable: "--alexandra" })
 
 export const metadata = {
+  metadataBase: new URL('https://mom-s-club.vercel.app/'),
   title: "Mom's club",
   description: "Mom's club - Первый курс по уходу за новорождёнными для мам в Узбекистане",
   icons: {
@@ -40,7 +41,7 @@ export const metadata = {
           ],
     title: "Mom's club",
     description: "Mom's club - Первый курс по уходу за новорождёнными для мам в Узбекистане",
-    url: 'https://mom-s-club-uz.vercel.app/',
+    url: 'https://mom-s-club.vercel.app/',
     siteName: "Mom's club",
   },
 };
@@ -48,7 +49,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${open_sans.variable} ${alexandra.variable}`}>
+      <body className={`${roboto?.variable} ${open_sans?.variable} ${alexandra?.variable}`}>
         <Header />
         {children}
         <Footer />
