@@ -203,9 +203,9 @@ const list = [
 ]
 const Plan = () => {
     return (
-        <div>
+        <div className='course-plan'>
             <div className="container">
-                <div className='pl-[32px] pr-[42px] pt-[62px] lg:pt-[76px]  pb-[46px] lg:pr-[85px] lg:pl-[60px] border-[3px] border-solid border-[#F1DBDA] rounded-[30px]'>
+                <div className='pl-[32px] pr-[42px] pt-[62px] lg:pt-[76px]  pb-[46px] lg:pr-[85px] lg:pl-[60px] border-[3px] border-solid border-[#F1DBDA] rounded-[30px] bg-white'>
                     <h3 className='text-secondaryDark alexandra text-[70px] lg:text-[100px] not-italic font-normal leading-[50px] lg:leading-[150px] text-center mb-[20px]'>
                         Подробнее о курсе
                     </h3>

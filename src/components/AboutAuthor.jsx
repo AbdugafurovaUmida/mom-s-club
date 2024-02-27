@@ -3,11 +3,11 @@ import Image from 'next/image'
 import UnBorderedButton from './common/UnBorderedButton'
 import certificate from '../../public/images/certificate.jpg'
 import quote from '../../public/images/quote.svg'
-import author from '../../public/images/author.jpg'
+import author from '../../public/images/author.png'
 
 const AboutAuthor = () => {
   return (
-    <section className="aboutAuthor my-[75px]">
+    <section className="aboutAuthor pb-[100px] pt-7">
       <div className='container'>
         <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[150%] text-secondaryDark text-center'>Об авторе</h3>
         <div className='relative flex flex-wrap justify-between px-4 md:px-8'>

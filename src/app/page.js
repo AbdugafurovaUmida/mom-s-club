@@ -9,8 +9,10 @@ const HomePage = () => {
   return (
     <main className='h-full min-h-screen'>
       <Hero />
-      <AboutAuthor/>
-      <Plan/>
+      <div className='course-author__wrapper'>
+         <AboutAuthor/>
+         <Plan/>
+      </div>
       <Products />
       <Materials />
     </main>

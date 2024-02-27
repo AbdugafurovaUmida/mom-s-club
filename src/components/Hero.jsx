@@ -3,12 +3,12 @@ import Image from 'next/image'
 import BorderedButton from './common/BorderedButton'
 import UnBorderedButton from './common/UnBorderedButton'
 import HeroImageFirst from '../../public/images/hero2.png'
-import HeroImageSecond from '../../public/images/hero3.png'
+import HeroImageSecond from '../../public/images/hero1.png'
 
 const Hero = () => {
   return (
 <>
-      <section className='hero lg:pt-[127px] pt-16 bg-right'>
+      <section className='hero pb-[150px] lg:pt-[127px] pt-16 bg-right'>
         {/* bg-hero-dark-pattern bg-no-repeat bg-contain */}
         <div className='container'>
           <div className='flex items-center md:flex-row flex-col'>
