@@ -4,6 +4,7 @@ import AboutAuthor from '@/components/AboutAuthor'
 import Plan from '@/components/Plan'
 import Products from '@/components/Products'
 import React from 'react'
+import Sponsors from '@/components/Sponsors'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <AboutAuthor/>
       <Plan/>
       <Products />
+      <Sponsors />
       <Materials />
     </main>
   )
