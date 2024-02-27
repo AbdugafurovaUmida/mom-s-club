@@ -28,6 +28,7 @@ const sponsors = [
         image: sponsor5,
         name: 'sponsor'
     },
+
 ];
 
 
@@ -39,14 +40,15 @@ const Sponsors = () => {
                 <div className="py-[62px] md:py-[75px] px-8  bg-white inner-container border-[3px] border-solid rounded-[30px] border-[#F1DBDA]">
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Наши спонсоры</h3>
 
-                    <div className="grid content-around grid-cols-1 gap-2 justify-items-center xl:grid-cols-4 sm:grid-cols-2 cards-wrapper">
-                            {
-                                sponsors.map((item) => (
-                        // <Marquee speed={10}>
-                                    <Image className="h-[150px] lg:h-[200px] mb-8 xl:mb-0 object-contain shadow-picShadow"  key={item.id}  src={item.image} alt={item.name} width={250} height={200} />
-                        // </Marquee>
-                                ))
-                            }
+                    <div className="cards-wrapper">
+                        <Marquee speed={10}>
+                            <div className=" grid justify-between grid-cols-1 gap-8 justify-items-center xl:grid-cols-4 sm:grid-cols-2  my-10">
+                                {
+                                    sponsors.map((item) => (
+                                        <Image className="h-[150px] lg:h-[200px] mb-8 xl:mb-0 object-contain shadow-picShadow " key={item.id} src={item.image} alt={item.name} width={250} height={200} />
+                                    ))
+                                }</div>
+                        </Marquee>
                     </div>
                 </div>
             </div>
