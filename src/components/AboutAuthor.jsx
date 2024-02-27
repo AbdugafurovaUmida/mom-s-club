@@ -11,7 +11,7 @@ const AboutAuthor = () => {
       <div className='container'>
         <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[150%] text-secondaryDark text-center'>Об авторе</h3>
         <div className='relative flex flex-wrap justify-between '>
-          <div className='border-[3px] border-[#F1DBDA] rounded-[30px] py-[55px] px-[22px] flex flex-col lg:items-start items-center gap-[16px] max-w-full xl:max-w-[49%] w-full text-dark  xl:mb-0 mb-12'>
+          <div className='bg-white border-[3px] border-[#F1DBDA] rounded-[30px] py-[55px] px-[22px] flex flex-col lg:items-start items-center gap-[16px] max-w-full xl:max-w-[49%] w-full text-dark  xl:mb-0 mb-12'>
             <p className=''>Хамзаева Нигора является спикером и организатором первых курсов для будущих мам в Узбекистане. Счастливая жена и мама одного сыночка.
               В 2022 году отучилась в Cradle Coach Academy (США). После успешной сдачи экзамена получила сертификат и является  специалистом по уходу за новорождёнными.</p>
 
