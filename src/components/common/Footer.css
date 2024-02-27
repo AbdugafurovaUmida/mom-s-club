@@ -1,9 +1,9 @@
 
 
 .whatsapp {
-	position: fixed;
+	/* position: fixed;
 	right: 0;
-	bottom: 0;
+	bottom: 0; */
 	z-index: 20;
 	padding-right: 32px;
 	padding-bottom: 32px;
@@ -27,7 +27,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgb(0, 150, 78), rgb(43, 173, 100));
+	background-image: linear-gradient(#E3B7B5,#C7B4B6);
 	border-radius: 50%;
 }
 
@@ -56,8 +56,6 @@
 	transform: translateY(-10px);
 	filter: drop-shadow(5px 20px 5px rgba(0, 0, 0, .2));
 }
-
-
 
 
 @keyframes pulse {
