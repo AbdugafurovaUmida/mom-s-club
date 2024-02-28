@@ -34,11 +34,7 @@ export default function Modal() {
     try {
       const response = await axios.post(`https://api.telegram.org/bot7026888986:AAHZ7fHmJqRTZIY1bAriWY2jsj7BElobKsk/sendMessage`, {
         chat_id: '484404492', // Replace 'CHAT_ID' with your actual chat ID
-        text: {
-          'Ismi': name,
-          'Familyasi': lastName,
-          'Telefon raqami': phoneNumber 
-        },
+        text: `Ismi: ${name}; \nFamilyasi: ${lastName};\n Telefon Raqami: ${phoneNumber};`
       });
       // {   }
       console.log('Message sent:', response.data);
@@ -51,15 +47,15 @@ export default function Modal() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name && lastName && phoneNumber) {
-      if(phoneNumber !== ''){
         sendMessageToTelegram(name, lastName, phoneNumber)
         setName('')
         setPhoneNumber('')
         setLastName('')
-      }else{
-        console.log('please enter a phonenumber')
-      }
+    
     }
+    else {
+    console.log('please enter a phonenumber')
+  }
   }
 
   return (
