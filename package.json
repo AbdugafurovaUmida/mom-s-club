@@ -13,6 +13,8 @@
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-overlays": "^5.2.1",
+    "react-phone-number-input": "^3.3.9",
     "telebot": "^1.4.1"
   },
   "devDependencies": {

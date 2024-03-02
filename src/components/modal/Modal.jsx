@@ -1,40 +1,31 @@
 'use client'
 import React, { useState } from 'react'
 import axios from 'axios';
-
-// const Modal = ({modalbot}) => {
-//   return (
-//     <div >
-//         <form action="" >
-//             <input type="text" placeholder='name' id='fname' className='border-black border-1' />
-//             <input type="text" placeholder='sourname'id='sourname' className='border-black border-1'  />
-//             <input type="text" placeholder='number' id='number' className='border-black border-1' />
-//             <input type="submit" onClick={modalbot()} className='border-green border-1' />
-//         </form>
-//     </div>
-//   )
-// }
-
-// export default Modal
+import Image from 'next/image'
+import Close from "../../../public/images/icons8-x.png"
+import PhoneInput from 'react-phone-number-input'
+import flags from 'react-phone-number-input/flags'
+import 'react-phone-number-input/style.css'
 
 
 
 
-
-export default function Modal() {
+export default function Modal({toggleModal}) {
   // const BOT_API_TOKEN = 'TOKEN'; // Replace 'TOKEN' with your actual bot token
 
-
   const [name, setName] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState('')
   const [lastName, setLastName] = useState('')
+  const [phone, setPhone] = useState("");
 
-  const sendMessageToTelegram = async (name, lastName, phoneNumber) => {
+  const [send, setSend] = useState(false)
 
+
+  const sendMessageToTelegram = async (name, lastName, phone) => {
+  
     try {
       const response = await axios.post(`https://api.telegram.org/bot7026888986:AAHZ7fHmJqRTZIY1bAriWY2jsj7BElobKsk/sendMessage`, {
         chat_id: '484404492', // Replace 'CHAT_ID' with your actual chat ID
-        text: `Ismi: ${name}; \nFamilyasi: ${lastName};\n Telefon Raqami: ${phoneNumber};`
+        text: `Ismi: ${name}; \nFamilyasi: ${lastName}; \nTelefon Raqami: ${phone};`
       });
       // {   }
       console.log('Message sent:', response.data);
@@ -46,53 +37,75 @@ export default function Modal() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (name && lastName && phoneNumber) {
-        sendMessageToTelegram(name, lastName, phoneNumber)
+    if (name && lastName && phone) {
+        sendMessageToTelegram(name, lastName, phone)
         setName('')
-        setPhoneNumber('')
+        setPhone('')
         setLastName('')
     
     }
     else {
     console.log('please enter a phonenumber')
   }
-  }
+  setSend(true)
+  };
 
   return (
 
     <>
-      <form action="" onSubmit={handleSubmit}>
-        <h3>Welcome to My Telegram App</h3>
+{send ? 
+<div className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[500px] max-h-[400px] w-full  overflow-auto fixed top-[136px] left-[280px] bg-[white] z-10 text-center'>
+<div className='flex justify-end'>
+        <button onClick={() =>  toggleModal()} className='max-w-[40px] mb-[20px]'><Image src={Close}  /></button>
+        </div>
+  <h3 className='alexandra text-2xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block '>Congratulation</h3>
+  
+</div> : 
+<form className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[600px] max-h-[500px] w-full  overflow-auto fixed top-[36px] left-[280px] bg-[white] z-10' action="" onSubmit={handleSubmit}>
+        <div className='flex justify-end'>
+        <button onClick={() =>  toggleModal()} className='max-w-[40px] mb-[20px]'><Image src={Close}  /></button>
+        </div>
+
         <div>
           <input
             type='text'
-            placeholder="Type your Name"
+            placeholder="Введите ваше имя"
+            required
             value={name}
             onChange={e => setName(e.target.value)}
+            className='focus:outline-none inline-block py-[18px] px-9 w-full max-w-full bg-transparent border-[3px] border-solid border-secondary rounded-[30px] text-base font-regular '
           />
         </div>
 
         <div>
           <input
             type="text"
-            placeholder='Type your phone Last Name'
+            placeholder='Введите фамилию'
+            required
             value={lastName}
             onChange={e => setLastName(e.target.value)}
+            className='focus:outline-none inline-block py-[18px] px-9 w-full max-w-full bg-transparent border-[3px] border-solid border-secondary rounded-[30px] text-base font-regular my-[25px] '
           />
         </div>
 
         <div>
-          <input t
+          <PhoneInput 
             type="text"
-            placeholder='Type your phone Number' 
-            value={phoneNumber}
-            onChange={e => setPhoneNumber(e.target.value)}
+            placeholder='Введите свой телефон'
+            flags={flags}
+            country={"uz"}
+            enableSearch={true} 
+            required
+            value={phone}
+            onChange={(phone) => setPhone(phone)}
+            className='focus:outline-none inline-block py-[18px] px-9  bg-transparent border-[3px] border-solid border-secondary rounded-[30px] text-base font-regular '
             />
         </div>
 
-
-        <button type='submit' title="Send" >send</button>
-      </form>
+        
+        <button type='submit' title="Send" className=' mt-[25px] inline-block py-[18px] px-9 w-full max-w-full bg-secondary border-[3px] border-solid border-transparent rounded-[30px] text-base font-regular text-center text-white' >Отправлять</button>
+      </form>}
+     
     </>
 
   );

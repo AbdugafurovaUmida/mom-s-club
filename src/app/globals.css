@@ -45,3 +45,8 @@ body{
   font-family: var(--open_sans);
 }
 
+.PhoneInputInput {
+  outline:none;
+}
+
+
