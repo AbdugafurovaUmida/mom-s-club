@@ -37,17 +37,17 @@ const Sponsors = () => {
     return (
         <section className=' mt-[100px] mb-[90px] '>
             <div className="container">
-                <div className="py-[62px] md:py-[75px] px-8  bg-white inner-container border-[3px] border-solid rounded-[30px] border-[#F1DBDA]">
+                <div className="py-[30px] md:py-[75px] px-8  bg-white inner-container border-[3px] border-solid rounded-[30px] border-[#F1DBDA]">
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Наши спонсоры</h3>
 
                     <div className="cards-wrapper">
                         {/* TODO:responsive tugirlash */}
                         <Marquee speed={10}>
-                            <div className="grid justify-between grid-cols-1 gap-8 my-10 justify-items-center xl:grid-cols-4 sm:grid-cols-2">
+                            <div className="grid justify-between grid-cols-4 gap-8 my-10 justify-items-center ">
                                 {
                                     sponsors.map((item) => (
                                         <Image 
-                                        className="h-[150px] lg:h-[200px] mb-8 xl:mb-0 object-contain shadow-picShadow " 
+                                        className="h-[150px] lg:h-[200px] mb-8 xl:mb-0 object-contain shadow-2xl" 
                                         key={item.id} 
                                         src={item.image} 
                                         alt={item.name} 
