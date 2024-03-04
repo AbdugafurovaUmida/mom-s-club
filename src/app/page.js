@@ -6,6 +6,7 @@ import Products from '@/components/Products'
 import React from 'react'
 import Sponsors from '@/components/Sponsors'
 
+
 const HomePage = () => {
   return (
     <main className='h-full min-h-screen'>
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Products />
       <Sponsors />
       <Materials />
+     
     </main>
   )
 }

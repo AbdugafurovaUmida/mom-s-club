@@ -232,7 +232,7 @@ const Plan = () => {
                             {list.map((data, index) => (
                                 <div key={index}>
                                     <ul>
-                                        <li key={data.id} className='text-lg font-bold leading-7 roboto text-dark pb-3'>{data.text}</li>
+                                        <li key={data.id} className='pb-3 text-lg font-bold leading-7 roboto text-dark'>{data.text}</li>
                                         {data.name.map((item, index) => (
                                             <li key={index} className='flex py-[5px] text-base not-italic font-light leading-6 text-dark roboto'><div className='w-[17px] h-[15px] mr-3'><Bird /></div>{item.title}</li>
 
