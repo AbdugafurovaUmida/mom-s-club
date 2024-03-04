@@ -98,7 +98,6 @@ const Gallery = () => {
                                         //         <video src={item.url} />
                                         //     </div>
                                         // ))
-
                                         : gallery[activeTab].reviews?.map((item, index) => (
                                             <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0] w-[240px] h-[300px] flex items-center justify-center">
                                                 <Image className='object-cover object-center' src={item.url} />
