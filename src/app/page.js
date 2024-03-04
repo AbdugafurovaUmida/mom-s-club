@@ -5,6 +5,7 @@ import Plan from '@/components/Plan'
 import Products from '@/components/Products'
 import React from 'react'
 import Sponsors from '@/components/Sponsors'
+import Gallery from '@/components/Gallery'
 
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
          <AboutAuthor/>
          <Plan/>
       </div>
+      <Gallery />
       <Products />
       <Sponsors />
       <Materials />
