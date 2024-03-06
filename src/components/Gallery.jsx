@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react'
-// import Video from 'next-video';
+import Video from 'next-video';
+import MomsClubVideo1 from '../../videos/Video1.mp4'
 import Image from 'next/image'
 import Image1 from '../../public/gallery/org1.jpg'
 import Image2 from '../../public/gallery/org2.jpg'
@@ -31,7 +32,7 @@ const gallery = [
         videos: [
             {
                 id: 1,
-                // url: require('../../public/videos/brilliant-video.mp4')
+                url: MomsClubVideo1
             },
         ]
     },
@@ -92,12 +93,13 @@ const Gallery = () => {
                                         <Image className='object-cover object-center w-full ' src={item.url} height={200} />
                                     </div>
                                 ))
-                                    : activeTab == 1 ? 'Bu yerda videolar boladi'
-                                        // gallery[activeTab].videos?.map((item, index) => (
-                                        //     <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-white">
-                                        //         <video src={item.url} />
-                                        //     </div>
-                                        // ))
+                                    : activeTab == 1 ? 
+                                        gallery[activeTab].videos?.map((item, index) => (
+                                            <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-white w-[300px] h-[350px]">
+                                               
+                                <Video src={item.url} style={{ height : '100%', innerWidth: '100%'}}/>
+                                            </div>
+                                        ))
 
                                         : gallery[activeTab].reviews?.map((item, index) => (
                                             <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0] w-[240px] h-[300px] flex items-center justify-center">
