@@ -243,8 +243,8 @@ const Plan = () => {
                             ))}
 
                         </div>
-                        <div>
-                            <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={500} height={500} />
+                        <div className='rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden'>
+                            <Image src="/images/course-about.jpg" width={250} height={350} />
                         </div>
                         <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden' />
                     </div>
