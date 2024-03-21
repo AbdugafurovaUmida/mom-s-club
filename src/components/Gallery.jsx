@@ -89,7 +89,7 @@ const Gallery = () => {
     return (
         <section className='mt-[150px]'>
             <div className="container">
-                <h3 className='mb-[35px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Галерея</h3>
+                <h3 className='mb-[35px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Галерея  </h3>
                 <div className="grid grid-cols-12 items-top">
                     <ul className=' col-span-3'>
                         {gallery.map((tab, index) => (
