@@ -87,32 +87,32 @@ const Gallery = () => {
     };
 
     return (
-        <section className='mt-[150px]'>
+        <section className='gallery mt-[150px]' id='галерея'>
             <div className="container">
                 <h3 className='mb-[35px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Галерея  </h3>
-                <div className="grid grid-cols-12 items-top">
-                    <ul className=' col-span-3'>
+                <div className="grid grid-cols-12 items-top md:gap-0 gap-10">
+                    <ul className='md:col-span-3 col-span-12 md:inline-block flex gap-5 justify-center '>
                         {gallery.map((tab, index) => (
                             <li
                                 key={index}
-                                className={`py-[8px] font-bold text-xl lg:rounded-t-[10px] tracking-[0.2px] min-h-[20px] text-[#333]  cursor-pointer !leading-[35px] hover:text-white duration-300 transition-all`}
+                                className={`py-[8px] font-bold text-xl lg:rounded-t-[10px] tracking-[0.2px] min-h-[20px] text-[#333]  cursor-pointer !leading-[35px] hover:text-white duration-300 transition-all w-full`}
                                 onClick={() => handleTabClick(index)}>
                                 <UnBorderedButton customClass={activeTab === index ? ' max-w-[230px] bg-white !text-secondary !border-secondary border-[3px] border-solid' : ' max-w-[230px]'}>{tab.tabName}</UnBorderedButton>
                             </li>
                         ))}
                     </ul>
-                    <div className=' col-span-9'>
-                        <div className="grid grid-cols-3 gap-6 items-center">
+                    <div className='md:col-span-9 col-span-12'>
+                        <div className="grid md:grid-cols-3 grid-cols-1 gap-6 items-center md:justify-start justify-center">
                             {
                                 activeTab == 0 ? gallery[activeTab].images?.map((item, index) => (
-                                    <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0] max-w-[350px] w-full max-h-[650px] h-full">
+                                    <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0] max-w-[350px] w-full max-h-[650px] h-full mx-auto">
                                         <Image className='object-cover object-center h-full' src={item.url}/>
                                     </div>
                                 ))
                                     : activeTab == 1 ? 
                                         
                                         gallery[activeTab].videos?.map((item, index) => (
-                                            <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] bg-[#F1DBDA] overflow-hidden  w-[250px] h-[350px]">
+                                            <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] bg-[#F1DBDA] overflow-hidden  w-[250px] h-[350px] mx-auto">
                                                 <video controls style={{ width: '100%', height: '100%' }} src={item.url} />
                                             </div>
                                         ))

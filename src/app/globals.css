@@ -11,6 +11,11 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body{
@@ -55,7 +60,15 @@ body{
   position: relative;
 }
 
-.hero::after{
+@media screen and (max-width: 768px) {
+  .hero-after {
+    background-image: url(/images/hero-light-pattern-small.png), url(/images/hero-dark-pattern-small.png) !important;
+    background-position: left bottom, right top -70px !important;
+    background-size: 80%, 50% !important;
+  }
+}
+
+.hero-after {
   content: '';
   width: 100%;
   height: 100%;
@@ -65,10 +78,11 @@ body{
   right: 0;
   background-image: url(/images/hero-light-pattern.png), url(/images/hero-dark-pattern.png);
   background-repeat: no-repeat;
+  background-position: left bottom, right bottom 45px;
   background-size: 54%, 50%;
-  background-position: left bottom,right bottom 45px;
   z-index: -1;
 }
+
 
 /* About Author*/
 .course-author__wrapper{
@@ -89,8 +103,6 @@ body{
   z-index: -2;
 }
 
-/* Course Plan */
-
 
 .course-author__wrapper::before{
   content: '';
@@ -106,6 +118,31 @@ body{
   z-index: -1;
 }
 
+
+@media screen and (max-width: 768px) {
+  .course-author__wrapper::after{
+    background-image: url(/images/course-author-light-pattern-small.png);
+    background-position: right top;
+    background-size: 100%;
+    margin-top: -40px;
+  }
+
+  .course-author__wrapper::before{
+    background-image: url(/images/about-course-dark-pattern-small.png),url(/images/about-course-light-pattern-small.png);
+    background-size: 100%;
+    background-position: left bottom 80%, right bottom 70%;
+  }
+  /* , url(/images/about-course-secondary-light-pattern-small.png) */
+  /* ,left bottom 57% */
+}
+
+
+/* Course Plan */
+
+.course-plan{
+  position: relative;
+}
+
 .course-plan::before{
   content: url(/images/course-plan-light-pattern.png);
   background-repeat: no-repeat;
@@ -114,6 +151,7 @@ body{
   left: 0;
   margin-bottom: -35%;
   z-index: -3;
+   /* display:  none; */
 }
 
 .course-plan::after{
@@ -124,6 +162,41 @@ body{
   right: 0;
   margin-bottom: -20%;
   z-index: -3;
+}
+
+@media screen and (max-width: 768px) {
+  .course-plan::before{
+   content: '';
+   background-image: url(/images/course-plan-light-pattern-small.png) !important;
+   bottom: 12%;
+   width: 100%;
+   height: 100%;
+  }
+
+  .course-plan::after{
+    content: url(/images/course-plan-dark-pattern-small.png);
+  }
+}
+
+/* Gallery */
+
+@media screen and (max-width: 768px) {
+  .gallery{
+    background-image: url(/images/gallery-light-pattern-small.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+  }
+}
+
+/* Products */
+@media screen and (max-width: 768px) {
+  .products{
+    background-image: url(/images/products-dark-pattern-small.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+  }
 }
 
 /* Materials */
@@ -149,5 +222,22 @@ body{
   left: 0;
   margin-bottom: -5%;
   z-index: -3;
+}
+
+@media screen and (max-width: 768px) {
+  .materials::before{
+    content: '';
+    background-image: url(/images/materials-light-pattern-small.png) !important;
+   top: -37%;
+   width: 100%;
+   height: 100%;
+  }
+  .materials::after{
+      content: '';
+    background-image: url(/images/materials-dark-pattern-small.png) !important;
+   margin-bottom: -25%;
+   width: 100%;
+   height: 100%;
+  }
 }
 

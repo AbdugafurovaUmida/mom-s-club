@@ -19,7 +19,7 @@ const Hero = () => {
   return (
 <>
 
-      <section className='hero pb-[150px] lg:pt-[127px] pt-16 bg-right'>
+      <section className='hero md:pb-[150px] pb-28 lg:pt-[127px] pt-16 bg-right'>
         <div className='container'>
           <div className='flex flex-col items-center md:flex-row'>
             <div className='md:pt-[118px] pt-[80px] md:text-left text-center'>
@@ -27,7 +27,7 @@ const Hero = () => {
                 <span className='alexandra text-2xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block'>Moms Club</span>
               </h1>
               <p className=' text-[24px] !leading-[32px] max-w-[590px] w-full'>Первый курс по уходу за новорождёнными для будущих мам в Узбекистане</p>
-              <div className='flex flex-col items-center gap-5 mt-11 md:flex-row md:items-start'>
+              <div className='flex flex-col items-center gap-5 md:mt-11 mt-16 md:flex-row md:items-start'>
                 <button className='min-w-[250px] inline-block' onClick={toggleModal}><UnBorderedButton>Записаться</UnBorderedButton></button>
                 {showModal && <Modal toggleModal={toggleModal}  renderBackdrop={renderBackdrop}/>}
                 <BorderedButton customLink={'https://www.instagram.com/momsclubuz/'} blank="blank">Прочитать подробнее</BorderedButton>
@@ -53,6 +53,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div className='hero-after'></div>
       </section>
 </>
   )
