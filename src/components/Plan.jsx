@@ -56,6 +56,9 @@ const list = [
             },
             {
                 title: "Пеленание"
+            },
+            {
+                title: "Нужна ли пустышка и какую выбрать"
             }
 
         ]
@@ -107,10 +110,10 @@ const list = [
         text: 'Урок 4',
         name: [
             {
-                title: "Виды смесь",
+                title: "Виды смесей",
             },
             {
-                title: "Как подобрать подходящую смес",
+                title: "Как подобрать подходящую смесь",
             },
             {
                 title: "Способ хранения",
@@ -194,8 +197,13 @@ const list = [
             },
             {
                 title: "Дисплазия",
+            },
+            {
+                title: "Форма головы",
+            },
+            {
+                title: "Грудничковое плавание",
             }
-
         ]
 
     },
@@ -203,8 +211,8 @@ const list = [
 ]
 const Plan = () => {
     return (
-        <div className='course-plan'>
-            <div className="container">
+        <section className='course-plan'>
+            <div className="container" id='о-курсе'>
                 <div className='pl-[32px] pr-[42px] pt-[62px] lg:pt-[76px]  pb-[46px] lg:pr-[85px] lg:pl-[60px] border-[3px] border-solid border-[#F1DBDA] rounded-[30px] bg-white'>
                     <h3 className='text-secondaryDark alexandra text-[70px] lg:text-[100px] not-italic font-normal leading-[50px] lg:leading-[150px] text-center mb-[20px]'>
                         Подробнее о курсе
@@ -221,7 +229,7 @@ const Plan = () => {
 
                         </div>
                         <div className='relative min-h-[400px] h-full'>
-                            <Image src={PregnancyWomen} width={300} height={300} className='absolute top-0 left-[30%]' />
+                            <Image src={PregnancyWomen} width={300} height={300} className='absolute top-0 md:right-[10%] right-[auto]' />
                         </div>
                     </div>
 
@@ -243,8 +251,8 @@ const Plan = () => {
                             ))}
 
                         </div>
-                        <div>
-                            <Image src="/images/photo_2024-02-21_16-53-32.jpg" width={500} height={500} />
+                        <div className='rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden !w-fit mx-auto md:mt-0 mt-8'>
+                            <Image src="/images/course-about.jpg" width={250} height={350} />
                         </div>
                         <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden' />
                     </div>
@@ -254,7 +262,7 @@ const Plan = () => {
 
             </div>
 
-        </div>
+        </section>
     )
 }
 

@@ -10,7 +10,7 @@ import Modal from "../components/modal/Modal"
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const renderBackdrop = showModal ? ' fixed top-0 bottom-0 left-0 right-0 bg-[#d2c3c5] w-full h-full z-10' : "";
+  const renderBackdrop = showModal ? ' fixed top-0 bottom-0 left-0 right-0 bg-[#d2c3c5] w-full h-full z-50' : "";
   
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -27,7 +27,7 @@ const Hero = () => {
                 <span className='alexandra text-2xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block'>Moms Club</span>
               </h1>
               <p className=' text-[24px] !leading-[32px] max-w-[590px] w-full'>Первый курс по уходу за новорождёнными для будущих мам в Узбекистане</p>
-              <div className='flex flex-col items-center gap-5 mt-11 md:flex-row md:items-start'>
+              <div className='flex flex-col items-center gap-5 md:mt-11 mt-16 md:flex-row md:items-start'>
                 <button className='min-w-[250px] inline-block' onClick={toggleModal}><UnBorderedButton>Записаться</UnBorderedButton></button>
                 {showModal && <Modal toggleModal={toggleModal}  renderBackdrop={renderBackdrop}/>}
                 <BorderedButton customLink={'https://www.instagram.com/momsclubuz/'} blank="blank">Прочитать подробнее</BorderedButton>
@@ -53,6 +53,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div className='hero-after'></div>
       </section>
 </>
   )

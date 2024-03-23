@@ -31,8 +31,9 @@ const products = [
 
 const Products = () => {
   return (
-    <section className='md:mt-[200px] mt-[100px]'>
+    <section className='md:mt-[120px] mt-[100px] products'>
         <div className="container">
+        <h3 className='mb-[45px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Наши посты в инстаграме</h3>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[38px] justify-center'>
           {
             products.map((item) => (
