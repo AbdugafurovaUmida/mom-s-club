@@ -54,11 +54,11 @@ export default function Modal({ toggleModal, renderBackdrop }) {
     <>
         {send ?
         <div className={renderBackdrop}>
-          <div className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[500px] max-h-[400px] w-full  overflow-auto fixed top-[136px] left-[280px] bg-[white] z-50 text-center'>
+          <div className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[500px] max-h-[400px] w-full  overflow-auto  m-auto lg:mt-[15%] mt-[30%] bg-[white] z-50 text-center'>
             <div className='flex justify-end'>
               <button onClick={() => toggleModal()} className='max-w-[40px] mb-[20px]'><Image src={Close} /></button>
             </div>
-            <h3 className='alexandra text-2xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block '>Congratulation</h3>
+            <h3 className='alexandra lg:text-2xl text-xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block '>Congratulation</h3>
           </div> 
         </div>
         :

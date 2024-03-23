@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { Bird, Line } from '@/app/svg'
 import PregnancyWomen from '../../public/images/pregnancy-women.png'
+import PregnancyTest from '../../public/images/heronew2.png'
+import CourseAbout from '../../public/images/course-about.jpg'
 
 
 const plan = [
@@ -252,9 +254,9 @@ const Plan = () => {
 
                         </div>
                         <div className='rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden !w-fit mx-auto md:mt-0 mt-8'>
-                            <Image src="/images/course-about.jpg" width={250} height={350} />
+                            <Image src={CourseAbout} width={250} height={350} />
                         </div>
-                        <Image src="/images/wepik-export-20240129160033amND.jpeg" width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden' />
+                        <Image src={PregnancyTest} width={188} height={200} className='lg:flex  absolute top-[-203px] left-[-170px] hidden' />
                     </div>
 
                 </div>
