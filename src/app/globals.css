@@ -63,8 +63,8 @@ body{
 @media screen and (max-width: 768px) {
   .hero-after {
     background-image: url(/images/hero-light-pattern-small.png), url(/images/hero-dark-pattern-small.png) !important;
-    background-position: left bottom, right top -70px !important;
-    background-size: 80%, 50% !important;
+    background-position: left  top , right top -15% !important;
+    background-size: 60% ,48% !important;
   }
 }
 

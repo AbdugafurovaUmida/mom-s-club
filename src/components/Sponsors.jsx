@@ -47,7 +47,7 @@ const Sponsors = () => {
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Наши спонсоры</h3>
 
                     <div className="cards-wrapper">
-                        <Marquee speed={30}>
+                        <Marquee speed={50}>
                             <div className="flex md:gap-8 gap-1 justify-items-center">
                                 {
                                     sponsors.map((item) => (

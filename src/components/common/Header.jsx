@@ -63,7 +63,7 @@ const Header = () => {
     <header className='md:pt-[127px] pt-16 absolute top-0 left-0 w-full bg-transparent z-30'>
       <div className="container">
         <nav className="nav">
-          <button className='md:hidden flex ml-auto pr-[20px] z-50 relative' onClick={handleClick}><Image className='text-right' src={HamburgerMenu} alt={HamburgerMenu} width={60} height={25} /></button>
+          <button className='md:hidden flex ml-auto pr-[20px] z-20 relative' onClick={handleClick}><Image className='text-right' src={HamburgerMenu} alt={HamburgerMenu} width={60} height={25} /></button>
           <ul className={`md:flex gap-6 transition-all !duration-1000 md:translate-y-0 ${isOpen ? 'flex flex-col items-center bg-[#FBF3F0] fixed top-0 left-0 w-full h-full pt-[125px] z-10 translate-y-0 ' : 'hidden flex-row translate-y-[-600px] h-0'}`}>
             {
               matches ? navMenu.map(item => (

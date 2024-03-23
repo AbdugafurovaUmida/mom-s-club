@@ -54,7 +54,7 @@ export default function Modal({ toggleModal, renderBackdrop }) {
     <>
         {send ?
         <div className={renderBackdrop}>
-          <div className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[500px] max-h-[400px] w-full  overflow-auto fixed top-[136px] left-[280px] bg-[white] z-10 text-center'>
+          <div className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[500px] max-h-[400px] w-full  overflow-auto fixed top-[136px] left-[280px] bg-[white] z-50 text-center'>
             <div className='flex justify-end'>
               <button onClick={() => toggleModal()} className='max-w-[40px] mb-[20px]'><Image src={Close} /></button>
             </div>
@@ -63,7 +63,7 @@ export default function Modal({ toggleModal, renderBackdrop }) {
         </div>
         :
         <div className={renderBackdrop}>
-          <form className={`rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[600px] max-h-[500px] w-full  overflow-auto m-auto mt-[5%] bg-[white] z-10 `} action="" onSubmit={handleSubmit}>
+          <form className={`rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[600px] max-h-[500px] w-full  overflow-auto m-auto mt-[5%] bg-[white] z-50 `} action="" onSubmit={handleSubmit}>
             <div className='flex justify-end'>
               <button onClick={() => toggleModal()} className='max-w-[40px] mb-[20px]'><Image src={Close} /></button>
             </div>

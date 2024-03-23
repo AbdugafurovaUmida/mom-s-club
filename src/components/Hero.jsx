@@ -10,7 +10,7 @@ import Modal from "../components/modal/Modal"
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const renderBackdrop = showModal ? ' fixed top-0 bottom-0 left-0 right-0 bg-[#d2c3c5] w-full h-full z-10' : "";
+  const renderBackdrop = showModal ? ' fixed top-0 bottom-0 left-0 right-0 bg-[#d2c3c5] w-full h-full z-50' : "";
   
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -19,7 +19,7 @@ const Hero = () => {
   return (
 <>
 
-      <section className='hero md:pb-[150px] pb-28 lg:pt-[127px] pt-16 bg-right'>
+      <section className='hero pb-[150px] lg:pt-[127px] pt-16 bg-right'>
         <div className='container'>
           <div className='flex flex-col items-center md:flex-row'>
             <div className='md:pt-[118px] pt-[80px] md:text-left text-center'>
