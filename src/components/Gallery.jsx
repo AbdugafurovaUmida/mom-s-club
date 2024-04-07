@@ -3,9 +3,12 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Image1 from '../../public/gallery/org1.png'
 import Image2 from '../../public/gallery/org2.jpg'
-import Review1 from '../../public/images/testimonials/review1.jpg'
-import Review2 from '../../public/images/testimonials/review2.jpg'
-import Review3 from '../../public/images/testimonials/review3.jpg'
+import Review1 from '../../public/images/testimonials/review11.png'
+import Review2 from '../../public/images/testimonials/review12.png'
+import Review3 from '../../public/images/testimonials/review13.png'
+import Review4 from '../../public/images/testimonials/review14.png'
+import Review5 from '../../public/images/testimonials/review15.png'
+import Review6 from '../../public/images/testimonials/review16.png'
 import UnBorderedButton from './common/UnBorderedButton';
 
 
@@ -61,11 +64,23 @@ const gallery = [
             },
             {
                 id: 2,
-                url: Review3,
+                url: Review2,
             },
             {
                 id: 3,
-                url: Review2,
+                url: Review3,
+            },
+            {
+                id: 4,
+                url: Review4,
+            },
+            {
+                id: 5,
+                url: Review5,
+            },
+            {
+                id: 6,
+                url: Review6,
             },
         ]
     }
@@ -90,8 +105,8 @@ const Gallery = () => {
         <section className='gallery mt-[150px]' id='галерея'>
             <div className="container">
                 <h3 className='mb-[35px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Галерея  </h3>
-                <div className="grid grid-cols-12 items-top md:gap-0 gap-10">
-                    <ul className='md:col-span-3 col-span-12 md:inline-block flex gap-5 justify-center '>
+                <div className="grid grid-cols-12 gap-10 items-top md:gap-0">
+                    <ul className='flex justify-center col-span-12 gap-5 md:col-span-3 md:inline-block '>
                         {gallery.map((tab, index) => (
                             <li
                                 key={index}
@@ -101,8 +116,8 @@ const Gallery = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className='md:col-span-9 col-span-12'>
-                        <div className="grid md:grid-cols-3 grid-cols-1 gap-6 items-center md:justify-start justify-center">
+                    <div className='col-span-12 md:col-span-9'>
+                        <div className="grid items-center justify-center grid-cols-1 gap-6 md:grid-cols-3 md:justify-start">
                             {
                                 activeTab == 0 ? gallery[activeTab].images?.map((item, index) => (
                                     <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0] max-w-[350px] w-full max-h-[650px] h-full mx-auto">
@@ -118,8 +133,10 @@ const Gallery = () => {
                                         ))
 
                                         : gallery[activeTab].reviews?.map((item, index) => (
-                                            <div key={item.id} className="rounded-[30px] border-[10px] border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0]  flex items-center justify-center">
-                                                <Image className='object-cover object-center max-w-[240px] w-full max-h-[300px] h-full' src={item.url} />
+                                          
+                                            <div key={item.id} className="rounded-tl-[20px] rounded-tr-[20px]  max-h-[300px] rounded-br-[20px] rounded-bl-0 border-2 border-solid border-[#F1DBDA] overflow-hidden bg-[#fbf3f0]  flex items-center justify-center">
+                                                <Image className='object-cover object-center w-fit  max-h-[300px] h-full' src={item.url} />
+                                               
                                             </div>
                                         ))
                             }
