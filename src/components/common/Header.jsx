@@ -32,7 +32,7 @@ const Header = () => {
 
   const [isOpen, setOpen] = useState(false)
   const [matches, setMatches] = useState(false);
-  
+
 
   const handleClick = () => {
     setOpen((prev) => !prev)
@@ -57,10 +57,10 @@ const Header = () => {
       }
     };
   }, []);
-  
+
 
   return (
-    <header className='md:pt-[127px] pt-16 absolute top-0 left-0 w-full bg-transparent z-30'>
+    <header className={`md:pt-[127px] pt-16 top-0 left-0 w-full bg-transparent z-30 ${isOpen ? 'fixed ' : 'absolute'}`}>
       <div className="container">
         <nav className="nav">
           <button className='md:hidden flex ml-auto pr-[20px] z-20 relative' onClick={handleClick}><Image className='text-right' src={HamburgerMenu} alt={HamburgerMenu} width={60} height={25} /></button>

@@ -15,21 +15,21 @@ const materials = [
     {
         id: 2,
         title: 'Прививки',
-        image: Vakcina ,
+        image: Vakcina,
         fileName: 'privivki.PNG',
         link: 'vakcina1.png',
     },
     {
         id: 3,
         title: 'Что брать в дорогу с детьми?',
-        image:doroga ,
+        image: doroga,
         fileName: 'doroga.pdf',
         link: 'combine.pdf'
     },
 ];
 const Materials = () => {
     return (
-        <section className='materials md:mt-[200px] mt-[100px] md:mb-[90px] mb-[121px]' id='материалы'>
+        <section className='materials md:mt-[200px] mt-[100px] md:mb-[90px] pb-[121px]' id='материалы'>
             <div className="container">
                 <div className="py-[62px] md:py-[75px] px-8 md:px-[60px] bg-white inner-container border-[3px] border-solid rounded-[30px] border-[#F1DBDA]">
                     <h3 className='mb-[26px] alexandra text-[70px] leading-[50px] lg:text-[100px] lg:leading-[100%] text-secondaryDark text-center'>Бесплатные материалы</h3>

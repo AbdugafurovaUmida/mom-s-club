@@ -21,7 +21,7 @@ export default function Modal({ toggleModal, renderBackdrop }) {
 
 
   const sendMessageToTelegram = async (name, lastName, phone) => {
-  
+
     try {
       const response = await axios.post(`https://api.telegram.org/bot7026888986:AAHZ7fHmJqRTZIY1bAriWY2jsj7BElobKsk/sendMessage`, {
         chat_id: '484404492', // Replace 'CHAT_ID' with your actual chat ID
@@ -37,29 +37,29 @@ export default function Modal({ toggleModal, renderBackdrop }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name && lastName && phone) {
-        sendMessageToTelegram(name, lastName, phone)
-        setName('')
-        setPhone('')
-        setLastName('')
-    
+      sendMessageToTelegram(name, lastName, phone)
+      setName('')
+      setPhone('')
+      setLastName('')
+
     }
     else {
-    console.log('please enter a phonenumber')
-  }
-  setSend(true)
+      console.log('please enter a phonenumber')
+    }
+    setSend(true)
   };
 
   return (
 
     <>
-        {send ?
+      {send ?
         <div className={renderBackdrop}>
           <div className='rounded-[30px] border-[3px] border-solid border-[#F1DBDA]  px-[40px] py-[40px] max-w-[500px] max-h-[400px] w-full  overflow-auto  m-auto lg:mt-[15%] mt-[30%] bg-[white] z-50 text-center'>
             <div className='flex justify-end'>
               <button onClick={() => toggleModal()} className='max-w-[40px] mb-[20px]'><Image src={Close} /></button>
             </div>
-            <h3 className='alexandra lg:text-2xl text-xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block '>Congratulation</h3>
-          </div> 
+            <h3 className='alexandra lg:text-2xl text-8xl md:leading-[100px] leading-[70px] md:my-4 my-5 inline-block '>Congratulation</h3>
+          </div>
         </div>
         :
         <div className={renderBackdrop}>
@@ -108,7 +108,7 @@ export default function Modal({ toggleModal, renderBackdrop }) {
             <button type='submit' title="Send" className=' mt-[25px] inline-block py-[18px] px-9 w-full max-w-full bg-secondary border-[3px] border-solid border-transparent rounded-[30px] text-base font-regular text-center text-white' >Отправлять</button>
           </form>
         </div>
-          }
+      }
     </>
 
   );

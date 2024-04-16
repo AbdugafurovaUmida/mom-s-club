@@ -231,7 +231,7 @@ const Plan = () => {
 
                         </div>
                         <div className='relative min-h-[400px] h-full'>
-                            <Image src={PregnancyWomen} width={300} height={300} className='absolute top-0 md:right-[10%] right-[auto]' />
+                            <Image src={PregnancyWomen} width={300} height={300} className='absolute top-0 lg:right-[10%] right-[50%] translate-x-2/4 lg:translate-x-0' />
                         </div>
                     </div>
 

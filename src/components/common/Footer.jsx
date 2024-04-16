@@ -4,6 +4,7 @@ import React from 'react'
 import Instagram from '../../../public/images/instagram-icon.svg'
 import Telegram from '../../../public/images/telegram-icon.svg'
 import Image from 'next/image';
+import GudTeam from '../../../public/images/gud-team-original.png'
 
 const Footer = () => {
 
@@ -24,14 +25,18 @@ const Footer = () => {
               <a className='underline hover:opacity-60' target="_blank" href="https://t.me/momsclubuzb">Связаться</a>
             </li>
           </ul>
-          <p
-            className='flex order-3 mt-6 transition duration-300 group md:order-none opacity-60 '>
-            Разработка сайта&nbsp; - &nbsp;
+          <div className='flex order-3 mt-6 group md:order-none items-center'>
+            <p
+              className=' transition duration-300  opacity-60 '>
+              Разработка сайта&nbsp; - &nbsp;
+            </p>
             <a
               target="_blank"
               href='https://www.instagram.com/gud_team_/'
-              className='font-bold transition duration-300 opacity-80 font-white hover:opacity-100 hover:underline hover:scale-125 hover:translate-x-6'> GUD team </a> </p>
-
+              className='font-bold transition duration-300 font-white hover:opacity-100 hover:underline hover:scale-[0.7] '>
+              <Image className='rounded-full' src={GudTeam} width={65} height={65} />
+            </a>
+          </div>
           <div className='flex flex-col md:items-end '>
             <div className="whatsapp">
               <button onClick={scrollToTop} className="whatsapp__wrapper relative lg:static top-[32px]  flex mb-2 justify-center items-center  " >
