@@ -23,8 +23,8 @@ export default function Modal({ toggleModal, renderBackdrop }) {
   const sendMessageToTelegram = async (name, lastName, phone) => {
 
     try {
-      const response = await axios.post(`https://api.telegram.org/bot7026888986:AAHZ7fHmJqRTZIY1bAriWY2jsj7BElobKsk/sendMessage`, {
-        chat_id: '484404492', // Replace 'CHAT_ID' with your actual chat ID
+      const response = await axios.post(`https://api.telegram.org/bot7011770992:AAFCcK1PL1V5_cWMe5_OQCa-R6EMqUYeu_8/sendMessage`, {
+        chat_id: '6307738403', // Replace 'CHAT_ID' with your actual chat ID
         text: `Ismi: ${name}; \nFamilyasi: ${lastName}; \nTelefon Raqami: ${phone};`
       });
       console.log('Message sent:', response.data);
