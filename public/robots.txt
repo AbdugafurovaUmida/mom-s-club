@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.momsclub.uz/
+
+# Sitemaps
+Sitemap: https://www.momsclub.uz/sitemap.xml
